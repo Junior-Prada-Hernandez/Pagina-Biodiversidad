@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#Información">Mapa</a>
+                <a href="#Galeria">Galeria</a>
+                <a href="#Biodiversidad">Videos</a>
+                <a href="#contactos">Contactos</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Explorando la Biodiversidad de la cuenca alta del rio de Ubaté.</h1>
+            <p class="copy"></p>
+        </div class="sonido">
+        <div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="services contenedor" id="Información">
+            <h2 class="subtitulo">Mapa</h2>
+            <div class="contenedor-servicio">
+                <img src="img/Mapa.PNG">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>¿Sabías qué?
+
+                            <button class="reproductor"><img src="img/sonido.svg" alt="#"></button>
+
+<script>
+    let boton = document.querySelector(".reproductor")
+
+    boton.addEventListener("click", () => {
+      let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "img/text-to-speech.mp3")
+      etiquetaAudio.play()
+    })
+</script>
+</h3>
+                       
+
+                        <p>La cuenca del río de Ubaté se encuentra localizada en los departamentos de Cundinamarca y Boyacá y cuenta con una extención de 991,65 km2</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>¿Sabías qué?
+                        
+                            <button class="reproductor1"><img src="img/sonido - copia.svg" alt="#"></button>
+                            <script>
+                                let boton2 = document.querySelector(".reproductor1")
+                            
+                                boton2.addEventListener("click", () => {
+                                  let etiquetaAudio = document.createElement("audio")
+                                  etiquetaAudio.setAttribute("src", "img/audio2.mp3")
+                                  etiquetaAudio.play()
+                                })
+                            </script> 
+                        
+                        </h3>
+
+                        
+                        <p>El viaje del río Ubaté es un recorrido fascinante por montañas escarpadas, planicies ondulantes y terrenos casi planos, un paisaje diverso que refleja la riqueza natural de la región.  </p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>¿Sabías qué?
+                        
+                            <button class="reproductor2"><img src="img/sonido - copia.svg" alt="#"></button>
+                            <script>
+                                let boton3 = document.querySelector(".reproductor2")
+                            
+                                boton3.addEventListener("click", () => {
+                                  let etiquetaAudio = document.createElement("audio")
+                                  etiquetaAudio.setAttribute("src", "img/audio3.mp3")
+                                  etiquetaAudio.play()
+                                })
+                            </script> 
+                        
+                        
+                        </h3>
+                        <p>La cuenca del río Ubaté pertenece a la cuenca hidrográfica del río Magdalena, y la sub cuenca del río Sogamoso. Dentro de su área se encuentran ubicados ocho municipios del departamento de Cundinamarca, en los cuales se encuentran: Tausa, Sutatausa, Ubaté, Carmen de Carupa, Fúquene, Guachetá, Lenguazaque, Cucunubá y un municipio del departamento de Boyacá, San Miguel de Sema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="Galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                  
+                    <img src="img/imagen1.jpeg" class="img-galeria" alt="">
+                    <img src="img/imagen2.jpeg" class="img-galeria" alt="">
+                    <img src="img/imagen3.jpeg" class="img-galeria" alt="">
+                    <img src="img/imagen4.jpeg" class="img-galeria" alt="">
+                    <img src="img/imagen5.jpeg" class="img-galeria" alt="">
+                    <img src="img/imagen6.jpeg" class="img-galeria" alt="">
+                    
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="Biodiversidad">
+            <h2 class="subtitulo">Videos</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <video src="img/video1.mp4" controls width="310"></video>
+                    
+                </div>
+                <div class="cont-expert">
+                    <video src="img/video2.mp4" controls width="310"></video>
+                   
+                </div>
+                <div class="cont-expert">
+                    <video src="img/video3.mp4" controls width="310"></video>
+                  
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="contactos">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">Julio Cesar Prada</h2>
+                    <h2 class="brand">Diego Chaves Ruiz  </h2>
+                    <p>Una Ventana a la Naturaleza Local</p>
+                </div>
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+        <div class="sonido"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
